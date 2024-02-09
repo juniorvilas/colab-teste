@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Query } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { AppService } from './app.service';
 import { GetAllUsersDto } from './dtos/get-all-users.dto';
 
@@ -13,10 +13,5 @@ export class AppController {
       page: request.page,
     });
     return usersFromApi;
-  }
-
-  @Get(':id')
-  getUserById(@Param() id: string) {
-    return this.appService.getUserById(id);
   }
 }
