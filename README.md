@@ -112,7 +112,7 @@ Abaixo poderá ter acesso às principais tecnologias usadas neste projeto
 
 ## :white_check_mark: Requisitos para rodar a aplicação
 
-Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) e [Node](https://nodejs.org/en/) instalado em seu sistema operacional, a CLI do Expo e o app Expo Go.Não sabe como fazer isso? Criamos abaixo uma documentação para ajudar vocês nesse processo [CLIdoExpo](https://efficient-sloth-d85.notion.site/Instalando-Expo-a4042eaea57d40fabeeaa2e462424ff0).
+Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) e [Node](https://nodejs.org/en/) instalado em seu sistema operacional
 
 ## :checkered_flag: Iniciando Frontend
 
