@@ -35,33 +35,33 @@
 ## 😸 Sobre
 
 O objetivo deste teste é avaliar suas habilidades de desenvolvimento
-Fullstack, especialmente em TypeScript e React. Você será solicitado a criar
-uma aplicação web que consuma a API Random User Generator para exibir
-uma lista de usuários e os detalhes de cada usuário. Você deve criar um
+Fullstack, especialmente em TypeScript e React. Criando
+uma aplicação web que consuma a <a href="https://github.com/juniorvilas" target="_blank">API Random User Generator</a>  para exibir
+uma lista de usuários e os detalhes de cada usuário. Criar um
 repositório no Git contendo o código-fonte da sua aplicação e um
 README.md explicando suas escolhas de arquitetura, paradigmas e
 quaisquer outras decisões importantes.
 
 ## :skateboard: Requisitos
 
-:heavy_check_mark: A aplicação deve ser escrita em TypeScript.
-:heavy_check_mark: O frontend deve ser desenvolvido usando React.
+:heavy_check_mark: A aplicação deve ser escrita em TypeScript.  
+:heavy_check_mark: O frontend deve ser desenvolvido usando React.  
 :heavy_check_mark: O back-end deve estar separado, porém no mesmo repo, pode ser
-utilizado qualquer framework node.js
+utilizado qualquer framework node.js  
 :heavy_check_mark: O backend deve consumir a API Random User Generator para obter
-os dados dos usuários e não o front diretamente.
+os dados dos usuários e não o front diretamente.  
 :heavy_check_mark: Deve haver uma página de listagem de usuários que exiba pelo
-menos o nome de cada usuário.
+menos o nome de cada usuário.  
 :heavy_check_mark: Ao clicar em um usuário da lista, deve ser exibida uma página de
 detalhes que mostra informações mais detalhadas sobre o usuário
-selecionado.
+selecionado.  
 :heavy_check_mark: A interface do usuário deve ser atraente e amigável, utilize qualquer
-framework de UI ou DS que você conheça.
+framework de UI ou DS que você conheça.  
 :heavy_check_mark: Os commits no repositório Git devem ser organizados e
-significativos.
+significativos.  
 :heavy_check_mark: O README.md deve explicar as decisões de arquitetura, paradigmas
 e outras escolhas importantes feitas durante o desenvolvimento da
-aplicação.
+aplicação.  
 
 ## :clipboard: Decisões de Arquitetura e Paradigmas
 
@@ -114,7 +114,7 @@ Abaixo poderá ter acesso às principais tecnologias usadas neste projeto
 
 Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) e [Node](https://nodejs.org/en/) instalado em seu sistema operacional, a CLI do Expo e o app Expo Go.Não sabe como fazer isso? Criamos abaixo uma documentação para ajudar vocês nesse processo [CLIdoExpo](https://efficient-sloth-d85.notion.site/Instalando-Expo-a4042eaea57d40fabeeaa2e462424ff0).
 
-## :checkered_flag: Iniciando Frontend Web
+## :checkered_flag: Iniciando Frontend
 
 ```bash
 # Clone este projeto
@@ -130,7 +130,7 @@ $ npm i
 $ npm run dev
 ```
 
-## :checkered_flag: Iniciando Backend (server)
+## :checkered_flag: Iniciando Backend 
 
 ```bash
 
@@ -144,10 +144,6 @@ $ npm i
 $ npm run start
 ```
 
-## 📡 Material complementar para o projeto
-
-- [Wallpapers-NLW-SETUP](https://drive.google.com/drive/folders/1F5ghUWdlaC_1IKFxkNUgGcTGqpqdpR29)
-- [Notion-Trilha-Ignite](https://efficient-sloth-d85.notion.site/Trilha-Ignite-562e3516c7574fb7be75ff01fbb41f54)
 
 Feito com :heart: por <a href="https://github.com/juniorvilas" target="_blank">Carlindo Junior</a>
 
