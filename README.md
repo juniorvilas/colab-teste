@@ -34,7 +34,7 @@
 
 O objetivo deste teste é avaliar suas habilidades de desenvolvimento
 Fullstack, especialmente em TypeScript e React. Criando
-uma aplicação web que consuma a <a href="https://github.com/juniorvilas" target="_blank">API Random User Generator</a>  para exibir
+uma aplicação web que consuma a <a href="https://github.com/juniorvilas" target="_blank">API Random User Generator</a> para exibir
 uma lista de usuários e os detalhes de cada usuário. Criar um
 repositório no Git contendo o código-fonte da sua aplicação e um
 README.md explicando suas escolhas de arquitetura, paradigmas e
@@ -59,7 +59,7 @@ framework de UI ou DS que você conheça.
 significativos.  
 :heavy_check_mark: O README.md deve explicar as decisões de arquitetura, paradigmas
 e outras escolhas importantes feitas durante o desenvolvimento da
-aplicação.  
+aplicação.
 
 ## :clipboard: Decisões de Arquitetura e Paradigmas
 
@@ -90,6 +90,10 @@ Para o gerenciamento de estado no frontend para salvar o detalhes do usuário, e
 ### Roteamento
 
 Para lidar com o roteamento no frontend, utilizei o React Router DOM, uma biblioteca popular que permitiu definir rotas de forma declarativa e fácil de entender. Com o React Router DOM, pude criar uma navegação fluida entre as diferentes páginas da aplicação.
+
+### Testes
+
+Foram realizados alguns testes unitários e de integração usando Jest.
 
 ## :rocket: Tecnologias
 
@@ -128,7 +132,7 @@ $ npm i
 $ npm run dev
 ```
 
-## :checkered_flag: Iniciando Backend 
+## :checkered_flag: Iniciando Backend
 
 ```bash
 
@@ -141,7 +145,6 @@ $ npm i
 # Execute o projeto
 $ npm run start
 ```
-
 
 Feito com :heart: por <a href="https://github.com/juniorvilas" target="_blank">Carlindo Junior</a>
 
