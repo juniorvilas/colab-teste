@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('all')
-  getAllUsers(@Query() request: GetAllUsersDto) {
+  async getAllUsers(@Query() request: GetAllUsersDto) {
     const usersFromApi = this.appService.getAllUsers({
       results: request.results,
       page: request.page,
