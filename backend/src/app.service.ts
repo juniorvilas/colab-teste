@@ -12,11 +12,12 @@ export class AppService {
   async getAllUsers({
     results,
     page,
-  }: GetAllUsersDto): Promise<AxiosResponse<GetAllUsersInterfaceOutput>> {
-    const reponse = await this.httpService.axiosRef.get(
-      `?page=${page}&results=${results}&seed=abc`,
-    );
+  }: GetAllUsersDto): Promise<GetAllUsersInterfaceOutput> {
+    const response: AxiosResponse<GetAllUsersInterfaceOutput> =
+      await this.httpService.axiosRef.get(
+        `?page=${page}&results=${results}&seed=abc`,
+      );
 
-    return reponse.data;
+    return response.data;
   }
 }
