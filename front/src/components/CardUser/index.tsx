@@ -1,71 +1,88 @@
+import { Tooltip } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
-import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
+import { FaPhone } from "react-icons/fa";
+import {
+  MdOutlineKeyboardArrowRight,
+  MdOutlineMailOutline,
+} from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+import { useUserStore } from "../../store/userDetails";
+import { User } from "../../types/types";
 
 export type Props = {
-  user: {
-    picture: {
-      large: string;
-    };
-    name: {
-      first: string;
-      last: string;
-    };
-    dob: {
-      age: number;
-    };
-    gender: string;
-    email: string;
-    phone: string;
-    id: {
-      value: string;
-    };
-  };
+  user: User;
 };
 
 export function CardUser({ user }: Props) {
+  const { setUser } = useUserStore();
+  const navigate = useNavigate();
+
+  const handleLinkClick = () => {
+    setUser(user);
+    navigate(`/user/${user.id.value}`);
+  };
+
+  const handlePhoneClick = () => {
+    navigator.clipboard.writeText(user.phone);
+    toast.success("Number copied!", { position: "top-right" });
+  };
   return (
-    <div className="rounded-md text-cyan-100 w-full text-center flex flex-col p-7 max-w-[350px] gap-2 border-green-300 border">
-      <div className="rounded-md bg-primary py-6 flex items-center w-full justify-center">
+    <div className="rounded-md text-primary-100 w-full text-center flex flex-col max-w-[350px] gap-2 border-primary-300 border">
+      <div className="relative rounded-t-md bg-primary-500 py-5 flex items-center w-full justify-center">
         <Avatar
           alt="Remy Sharp"
-          src={user.picture.large}
+          src={user.picture.medium}
           sx={{ width: 100, height: 100 }}
+          className="absolute top-16"
         />
       </div>
-
-      <h2 className="text-blue-600 text-2xl">
-        {user.name.first} {user.name.last}
-      </h2>
-      <div className="flex justify-between ">
-        <div className="flex gap-3">
-          <h2 className="font-semibold">Age:</h2>
-          <h2>{user.dob.age}</h2>
+      <div className="flex flex-col p-5 gap-2 mt-5">
+        <h2 className="text-primary-400 text-2xl">
+          {user.name.first} {user.name.last}
+        </h2>
+        <div className="flex justify-between ">
+          <div className="flex gap-3">
+            <h2 className="font-semibold">Age:</h2>
+            <h2>{user.dob.age}</h2>
+          </div>
+          <div className="flex gap-3">
+            <h2 className="font-semibold">Gender:</h2>
+            <h2>{user.gender}</h2>
+          </div>
         </div>
-        <div className="flex gap-3">
-          <h2 className="font-semibold">Gender:</h2>
-          <h2>{user.gender}</h2>
-        </div>
-      </div>
 
-      <div className="flex gap-3">
-        <h2 className="font-semibold">Phone:</h2>
-        <h2>{user.phone}</h2>
-      </div>
-      <div className="w-full flex flex-col ">
-        <a
-          target="_blank"
-          type="button"
-          href={`mailto:${user.email}`}
-          className=" w-full text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-        >
-          Send a email to {user.email}
-        </a>
-        <Link
-          to={`/user/${user.id.value}`}
-          className=" w-full text-white bg-gradient-to-br to-green-400 from-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-        >
-          Details
-        </Link>
+        <Tooltip placement="top" arrow title="Copy number">
+          <button
+            onClick={handlePhoneClick}
+            className="cursor-pointer hover:text-primary-500 flex items-center gap-3"
+          >
+            <FaPhone />
+            <h2>{user.phone}</h2>
+          </button>
+        </Tooltip>
+
+        <div className="w-full flex flex-col ">
+          <a
+            target="_blank"
+            type="button"
+            href={`mailto:${user.email}`}
+            className=" w-full flex items-center gap-2 group hover:text-primary-500 justify-center text-white font-medium text-sm py-2.5 text-center me-2 mb-2"
+          >
+            <MdOutlineMailOutline className="group-hover:-translate-x-2 transition ease-in" />{" "}
+            {user.email}
+          </a>
+          <button
+            onClick={handleLinkClick}
+            className=" w-full flex items-center group justify-center text-white bg-gradient-to-br to-primary-400 from-primary-800 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          >
+            Details
+            <MdOutlineKeyboardArrowRight
+              size={20}
+              className="group-hover:translate-x-2 transition ease-in"
+            />
+          </button>
+        </div>
       </div>
     </div>
   );
