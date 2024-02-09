@@ -1,4 +1,4 @@
 export type GetAllUsersDto = {
-  page?: string;
+  page?: number;
   results?: number;
 };
