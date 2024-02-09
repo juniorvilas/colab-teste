@@ -20,13 +20,11 @@
 
 <p align="center">
   <a href="#-sobre">Sobre</a> &#xa0; | &#xa0;
-  <a href="#telas-da-aplicação">Telas</a> &#xa0; | &#xa0;
-  <a href="#skateboard-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
+  <a href="#skateboard-requisitos">Requisitos</a> &#xa0; | &#xa0;
+  <a href="#clipboard-decisoes-de-arquitetura-e-paradigmas">Decisões de Arquitetura e Paradigmas</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requisitos-para-rodar-a-aplicação">Requisitos</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-iniciando">Iniciando</a> &#xa0; | &#xa0;
-  <a href="#-configurações-adicionais-ao-projeto">Schemas</a> &#xa0; | &#xa0;
-  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-iniciando">Iniciando</a> &#xa0; | &#xa0;  
   <a href="https://github.com/juniorvilas" target="_blank">Autor</a>
 </p>
 
