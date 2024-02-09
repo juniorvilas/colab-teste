@@ -73,25 +73,25 @@ O projeto foi estruturado seguindo uma arquitetura de frontend e backend separad
 
 #### Frontend
 
-No frontend, adotei o paradigma de desenvolvimento orientado a componentes oferecido pelo React. Isso nos permitiu criar uma interface de usuário modular e reutilizável, facilitando a construção e manutenção das diferentes partes da aplicação. Utilizamos também o Tailwind CSS para estilização, seguindo o paradigma utility-first, o que nos proporcionou uma abordagem mais ágil e consistente na criação dos estilos.
+No frontend, adotei o paradigma de desenvolvimento orientado a componentes oferecido pelo React. Isso nos permitiu criar uma interface de usuário modular e reutilizável, facilitando a construção e manutenção das diferentes partes da aplicação.Também usei o Tailwind CSS para estilização, seguindo o paradigma utility-first, o que proporcionou uma abordagem mais ágil e consistente na criação dos estilos.
 
 #### Backend
 
-No backend, segui os princípios da arquitetura REST para projetar nossas APIs, visando uma comunicação clara e padronizada entre o cliente e o servidor. Utilizamos o NestJS como framework para o backend devido à sua estrutura modular e sua integração fácil com o TypeScript. Além disso, adotamos o uso de bibliotecas como Axios para realizar requisições HTTP de forma eficiente.
+No backend, segui os princípios da arquitetura REST para projetar API, visando uma comunicação clara e padronizada entre o cliente e o servidor. Utilizei o NestJS como framework para o backend devido à sua estrutura modular e sua integração fácil com o TypeScript. Além disso, adotei o uso de bibliotecas como Axios para realizar requisições HTTP de forma eficiente.
 
 ## :bulb: Outras Escolhas Importantes
 
 ### UI Framework
 
-Optei por utilizar o Material-UI (MUI) como framework de UI no frontend devido à sua vasta coleção de componentes prontos para uso e sua integração perfeita com o React. Isso nos permitiu construir uma interface de usuário consistente e visualmente atraente em um curto espaço de tempo.
+Optei por utilizar o Material-UI (MUI) como framework de UI no frontend devido à sua vasta coleção de componentes prontos para uso e sua integração perfeita com o React. Isso permitiu construir uma interface de usuário consistente e visualmente atraente em um curto espaço de tempo.
 
 ### Gerenciamento de Estado
 
-Para o gerenciamento de estado no frontend para salvar o detalhes do usuário, escolhi o Zustand devido à sua simplicidade e eficiência. Com o Zustand, pudemos centralizar o estado da aplicação de forma fácil e transparente, garantindo um fluxo de dados coeso e previsível em toda a aplicação.
+Para o gerenciamento de estado no frontend para salvar o detalhes do usuário, escolhi o Zustand devido à sua simplicidade e eficiência. Com o Zustand, pude centralizar o estado da aplicação de forma fácil e transparente, garantindo um fluxo de dados coeso e previsível em toda a aplicação.
 
 ### Roteamento
 
-Para lidar com o roteamento no frontend, utilizamos o React Router DOM, uma biblioteca popular que nos permitiu definir rotas de forma declarativa e fácil de entender. Com o React Router DOM, pudemos criar uma navegação fluida entre as diferentes páginas da aplicação.
+Para lidar com o roteamento no frontend, utilizei o React Router DOM, uma biblioteca popular que permitiu definir rotas de forma declarativa e fácil de entender. Com o React Router DOM, pude criar uma navegação fluida entre as diferentes páginas da aplicação.
 
 ## :rocket: Tecnologias
 
