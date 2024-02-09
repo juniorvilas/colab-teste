@@ -13,17 +13,10 @@ export class AppService {
     results,
     page,
   }: GetAllUsersDto): Promise<AxiosResponse<GetAllUsersInterfaceOutput>> {
-    const allUsers = await this.httpService.axiosRef.get(
-      `https://randomuser.me/api/?page=${page}&results=${results}&seed=abc`,
-    );
-    return allUsers;
-  }
-
-  getUserById(id: string): Promise<AxiosResponse<GetAllUsersInterfaceOutput>> {
-    const userById = this.httpService.axiosRef.get(
-      `https://randomuser.me/api/?id=${id}`,
+    const reponse = await this.httpService.axiosRef.get(
+      `?page=${page}&results=${results}&seed=abc`,
     );
 
-    return userById;
+    return reponse.data;
   }
 }
